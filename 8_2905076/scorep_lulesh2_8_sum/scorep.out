@@ -1,0 +1,115 @@
+
+===================================================================
+/****************** MPI Statistical Information ******************/
+===================================================================
+
+------------------------- MPI Information -------------------------
+Dimension                      1 
+Shape                          8 
+
+---------------------- MPI Memory Usage (MiB) ---------------------
+                              MAX              MIN              AVE
+Estimated_Memory_Size       44.43 [   0]     44.43 [   0]     44.43
+
+------------------- Per-peer Communication Count ------------------
+                              MAX              MIN              AVE
+In_Node                         0 [   0]         0 [   0]       0.0
+Neighbor                    14251 [   7]      8204 [   0]   11198.0
+Not_Neighbor                20345 [   6]     12190 [   1]   16280.0
+Total_Count                 34565 [   7]     20500 [   0]   27478.0
+Connection                      7 [   0]         7 [   0]       7.0
+Max_Hop                         3 [   0]         3 [   0]       3.0
+Average_Hop                  1.71 [   0]      1.71 [   0]      1.71
+
+----------------- Per-peer Transmission Size (MiB) ----------------
+                              MAX              MIN              AVE
+In_Node                      0.00 [   0]      0.00 [   0]      0.00
+Neighbor                   180.38 [   7]     88.01 [   0]    134.19
+Not_Neighbor               360.42 [   6]    175.92 [   1]    268.17
+Total_Size                 540.75 [   7]    263.93 [   0]    402.36
+
+----------------- Per-protocol Communication Count ----------------
+                              MAX              MIN              AVE
+Eager                       16275 [   6]      8151 [   1]   12232.2
+Rendezvous                  18300 [   7]     12190 [   0]   15245.8
+Hasty_Rendezvous                0 [   0]         0 [   0]       0.0
+Persistent_Extended_IF          0 [   0]         0 [   0]       0.0
+Unexpected_Message              2 [   1]         1 [   0]       1.1
+
+------------------- Barrier Communication Count -------------------
+                              MAX              MIN              AVE
+Tofu                           61 [   0]        61 [   0]      61.0
+Soft                            3 [   0]         3 [   0]       3.0
+
+----------- Tofu Barrier Collective Communication Count -----------
+                              MAX              MIN              AVE
+Bcast                           4 [   0]         4 [   0]       4.0
+Reduce                          1 [   0]         1 [   0]       1.0
+Allreduce                       2 [   0]         2 [   0]       2.0
+
+--------- 6D-Tofu-specific Collective Communication Count ---------
+                              MAX              MIN              AVE
+Alltoall                        0 [   0]         0 [   0]       0.0
+
+----------- Tofu-specific Collective Communication Count ----------
+                              MAX              MIN              AVE
+Bcast                           0 [   0]         0 [   0]       0.0
+Reduce                          0 [   0]         0 [   0]       0.0
+Gather                         58 [   0]        58 [   0]      58.0
+Gatherv                         0 [   0]         0 [   0]       0.0
+Allreduce                       0 [   0]         0 [   0]       0.0
+Alltoall                        0 [   0]         0 [   0]       0.0
+Alltoallv                       0 [   0]         0 [   0]       0.0
+Allgather                       0 [   0]         0 [   0]       0.0
+Allgatherv                      0 [   0]         0 [   0]       0.0
+
+--------- Non-Tofu-specific Collective Communication Count --------
+                              MAX              MIN              AVE
+Bcast                           1 [   0]         1 [   0]       1.0
+Reduce                          1 [   0]         1 [   0]       1.0
+Gather                          0 [   0]         0 [   0]       0.0
+Gatherv                         1 [   0]         1 [   0]       1.0
+Allreduce                    2036 [   0]      2036 [   0]    2036.0
+Alltoall                        0 [   0]         0 [   0]       0.0
+Alltoallv                       0 [   0]         0 [   0]       0.0
+Allgather                       2 [   0]         2 [   0]       2.0
+Allgatherv                      0 [   0]         0 [   0]       0.0
+
+
+------------------------- Process Mapping -------------------------
+(0)                    0
+(1)                    1
+(2)                    2
+(3)                    3
+(4)                    4
+(5)                    5
+(6)                    6
+(7)                    7
+
+Running problem size 30^3 per domain until completion
+Num processors: 8
+Total number of elements: 216000
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:  
+   Problem size        =  30 
+   MPI tasks           =  8 
+   Iteration count     =  2031 
+   Final Origin Energy = 7.130703e+05 
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 1.164153e-10
+        TotalAbsDiff = 4.644733e-09
+        MaxRelDiff   = 3.401532e-14
+
+
+Elapsed time         =     712.31 (s)
+Grind time (us/z/c)  =  12.989581 (per dom)  ( 1.6236976 overall)
+FOM                  =  615.87824 (z/s)
+
